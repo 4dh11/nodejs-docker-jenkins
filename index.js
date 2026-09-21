@@ -2,11 +2,11 @@ const express = require('express');
 const app = express();
 const PORT = process.env.PORT || 3000;
 
-// GET /status endpoint required by Lab 11
 app.get('/status', (req, res) => {
   res.status(200).json({
-    "status": "API Updated Successfully",
-    message: "Node.js API containerized with Docker & managed by Jenkins CI/CD pipeline",
+    status: "Working wooooo",
+    message: "CI/CD Pipeline automated build verified!",
+    version: "1.0.1",
     timestamp: new Date().toISOString()
   });
 });
